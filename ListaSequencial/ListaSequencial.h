@@ -61,11 +61,43 @@ int insereListaInicio(Lista* li, struct aluno al);
 
 /*
  * @param Lista
- * @param aluno
  * @return int
- * Insere no inicio da lista
+ * Remove do final da lista
  * */
-int insereListaOrdenada(Lista* li, struct aluno al);
+int removeListaFinal(Lista* li);
+
+/*
+ * @param Lista
+ * @return int
+ * Remove do final da lista
+ * */
+int removeListaInicio(Lista* li);
+
+/*
+ * @param Lista
+ * @param int
+ * @return int
+ * Remove do final da lista
+ * */
+int removeLista(Lista* li, int matricula);
+
+/*
+ * @param Lista
+ * @param int
+ * @param struct aluno
+ * @return int
+ * Busca pela posição na lista
+ * */
+int buscaListaPos(Lista* li, int pos, struct aluno *al);
+
+/*
+ * @param Lista
+ * @param int
+ * @param struct aluno
+ * @return int
+ * Busca pela posição na lista
+ * */
+int buscaListaMat(Lista* li, int mat, struct aluno *al);
 
 
 void imprimeLista(Lista* li);
