@@ -78,10 +78,12 @@ int main() {
     Lista *li;
     li = criaListaEncad();
     printf("\nCriou a lista!!\n");
+    int x = tamanhoListaEncad(li);
+    printf("\nTamanho da lista: %d", x);
     liberaListaEncad(li);
     printf("\nLiberou a lista!!\n");
 
-    //Next Aula 12
+    //Next Aula 14
 
 
 
